@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/df00e3dc7b.js" crossorigin="anonymous"></script>
+    <title>OOP Gallery</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="page-title">Photo Gallery<span class="underline"></span>
+        </h2>
+    </header>
+    <main>
+        <!-- GALLERY -->
+        <section class="gallery-section">
+            <div class="image-container">
+                <!-- Example image -->
+                <article>
+                    <img src="image.jpg" alt="Image description">
+                    <h3>Image title</h3>
+                    <p>Image description</p>
+                </article>
+            </div>
+        </section>
+        <!-- MODAL -->
+        <aside class="modal">
+            <header class="modal-header">
+                <button type="button" class="close-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </header>
+            <div class="main-image">
+                <nav>
+                    <button type="button" class="prev-btn">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button type="button" class="next-btn">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </nav>
+                <!-- Example image -->
+                <figure>
+                    <img src="image.jpg" alt="Image description">
+                    <figcaption>Image caption</figcaption>
+                </figure>
+            </div>
+            <div class="image-selector">
+            </div>
+        </aside>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>

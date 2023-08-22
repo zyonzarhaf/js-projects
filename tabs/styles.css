@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400');
+
+:root {
+    /* lighter shades of main color */
+    --clr-main-1: #fff7ed;
+    --clr-main-2: #ffedd5;
+    --clr-main-3: #fed7aa;
+    --clr-main-4: #fdba74;
+    /* darker shades of main color */
+    --clr-main-5: #fb923c;
+    --clr-main-6: #f97316;
+    --clr-main-7: #ea580c;
+    --clr-main-8: #c2410c;
+    --clr-main-9: #9a3412;
+
+    /* lighter shades of grey*/
+    --clr-grey-1: #f8fafc;
+    --clr-grey-2: #f1f5f9;
+    --clr-grey-3: #e2e8f0;
+    --clr-grey-4: #cbd5e1;
+    /* darker shades of grey */
+    --clr-grey-5: #94a3b8;
+    --clr-grey-6: #64748b;
+    --clr-grey-7: #475569;
+    --clr-grey-8: #334155;
+    --clr-grey-9: #1e293b;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--clr-grey-1);
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--clr-grey-9);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Karla', sans-serif;
+    line-height: 1.3;
+    text-transform: capitalize;
+    letter-spacing: 1.75px;
+}
+
+h1 {
+    font-size: 3.052rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+button {
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.75px;
+    cursor: pointer
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem 0;
+}
+
+.page-title {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.title-underline {
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 0 auto;
+    background-color: var(--clr-main-4);
+}
+
+img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.200);
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab-button {
+    width: calc(100% / 3);
+    padding: 0.4rem 0 0.6rem;
+    background-color: var(--clr-main-3);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: #9a341287;
+    transition: 0.3s;
+}
+
+.tab-button:hover,
+.active {
+    background-color: white;
+    color: var(--clr-grey-9);
+}
+
+.tab-content {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .main-content {
+        flex-direction: row;
+        align-items: initial;
+        justify-content: center;
+        gap: 0 1rem;
+    }
+}

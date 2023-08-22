@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="./styles.css" />
+<script src="https://kit.fontawesome.com/df00e3dc7b.js" crossorigin="anonymous"></script>
+<title>Video home page</title>
+
+<body>
+
+    <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="sidebar-modal">
+    </div>
+
+    <header class="nav-container">
+        <nav class="nav">
+            <small class="logo">logo</small>
+            <button type="button" class="sidebar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="">home</a></li>
+                <li><a href="">store</a></li>
+                <li><a href="">about</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar-container">
+        <div class="sidebar-header">
+            <small class="logo">logo</small>
+            <button type="button" class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="sidebar">
+            <ul class="nav-links">
+                <li><a href="#home">home</a></li>
+                <li><a href="#store">store</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+            <ul class="social-links">
+                <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="home">
+        <section class="hero">
+            <header class="overlay-text">
+                <h2>built to endure</h2>
+                <h5>Secure, Somplete and Reliable Power Racks</h5>
+                <a href="#latest" class="scroll-link">latest products</a>
+            </header>
+            <video class="video-container" muted autoplay loop>
+                <source src="./videos/video1.mp4" type="video/mp4" />
+                your browser does not support this type of media
+            </video>
+        </section>
+        <section id="latest-products">
+            <section class="products-container">
+                <header class="section-header">
+                    <h4>power racks<span class="underline"></span></h4>
+                </header>
+                <!-- product -->
+            </section>
+            <section class="products-container">
+                <header class="section-header">
+                    <h4>squat stands<span class="underline"></span></h4>
+                </header>
+                <!-- product -->
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="scroll-top" title="back to top"><i class="fa-solid fa-arrow-up"></i></a>
+        <p class="copy">
+            copyright &copy; master the iron <span id="date"></span>. all rights reserved.
+        </p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

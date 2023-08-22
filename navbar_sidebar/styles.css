@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+/*16px*/
+
+body {
+    background: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.75px;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 3.052rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-size: 1.953rem;
+}
+
+h4 {
+    font-size: 1.563rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+li {
+    list-style: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+a {
+    letter-spacing: 0.75px;
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navbar {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.200);
+}
+
+.section-center {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-links {
+    display: none;
+}
+
+.fa-brands,
+.fa-solid {
+    font-size: 1.3rem;
+}
+
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.fa-github:hover {
+    color: #6e5494;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.sidebar {
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    z-index: 3;
+}
+
+.sidebar-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 14px rgba(0,0,0,0.200);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar-btn,
+.close-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.close-btn {
+    color: rgb(196, 0, 0);
+}
+
+.close-btn:hover {
+    color: rgb(255, 76, 76);
+}
+
+.sidebar-links li {
+    margin: 1rem 0;
+}
+
+.sidebar-links a {
+    padding-left: 1rem;
+    transition: 0.3s;
+}
+
+.sidebar-links a:hover {
+    padding-left: 2rem;
+}
+
+.sidebar-links-flex {
+    display: flex;
+    justify-content: center;
+    gap: 0 1rem;
+}
+
+.show-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+@media (min-width: 800px) {
+    .navbar-links {
+        display: flex;
+        align-items: center;
+        gap: 0 1.3rem;
+    }
+
+    .navbar-links a {
+        padding: 0.3rem 0;
+    }
+
+    .navbar-links a:hover {
+        border-bottom: 2px solid black;
+    }
+
+    .sidebar-btn {
+        display: none;
+    }
+}
