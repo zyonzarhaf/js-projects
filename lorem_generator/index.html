@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>Lorem Generator</title>
+</head>
+
+<body>
+    <header class="section-center">
+        <h1>
+            Lorem Ipsum Generator
+        </h1>
+    </header>
+    <main>
+        <section class="section-center">
+            <form class="lorem-form">
+                <label for="paragraphs">Paragraphs:</label>
+                <input
+                type="number"
+                id="paragraphs"
+                name="paragraphs"
+                min="1"
+                max="12"
+                placeholder="5"
+                required>
+                <button type="submit" class="lorem-btn">
+                    generate
+                </button>
+            </form>
+            <article class="lorem-article">
+            </article>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
